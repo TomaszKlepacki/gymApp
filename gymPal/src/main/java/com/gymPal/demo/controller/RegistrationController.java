@@ -13,6 +13,7 @@ import java.net.URI;
 
 @RestController
 @AllArgsConstructor
+@RequestMapping("/api")
 public class RegistrationController {
 
     private final UserServiceImpl userService;
@@ -51,6 +52,11 @@ public class RegistrationController {
     @PostMapping("/admin/addRole")
     public ResponseEntity<?>addRole(@RequestParam("username")String username, @RequestParam("role")String role){
         return ResponseEntity.ok().body(userService.addRoleToUser(username,role));
+    }
+
+    @GetMapping("/admin/hello")
+    public String yea(){
+        return "Hello admin";
     }
 
 }
