@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.html">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Rejestracja</title>
+</head>
+<body>
+    
+    <form id="form" class="form">
+
+        <div class="container">
+            <h1>Rejestracja</h1>
+            <p class="text">Uzupełnij formularz, aby utworzyć konto.</p>
+            <hr>
+            <i class="uil uil-user"></i>
+            <label for="user"><b>Użytkownik</b></label>
+            <input type="text" placeholder="Nazwa użytkownika" name="username" id="user" required>
+
+            <i class="uil uil-envelope"></i>
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Email" name="email" id="email" required>
+            
+           
+            <i class="uil uil-padlock"></i>
+            <label for="psw"><b>Hasło</b></label>
+            <input onkeyup="trigger()" type="password" placeholder="Hasło" name="psw" id="password" required>
+            <span class="first"><i class="fa-solid fa-eye"  id="eye" onclick="toggle()"></i></span>
+      
+          <div class="indicator">
+             <span class="weak"></span>
+            <span class="medium"></span>
+             <span class="strong"></span>
+         </div>
+            <div class="text_password">Twoje hasło jest słabe</div>
+   
+            
+            <i class="uil uil-padlock"></i>
+            <label for="psw"><b>Powtórz hasło</b></label>
+            <input type="password" placeholder="Powtórz hasło" name="psw" id="password-2" required>
+            <span class="second"><i class="fa-solid fa-eye second"  id="eye-2" onclick="toggle_2()"></i></span>
+          
+            <hr>
+        
+            <p>Zakładając konto zgadzasz się na nasze <a href="#">Warunki i Prywatność</a>.</p>
+            <button type="submit" id="register" class="btn">Rejestracja</button>
+         
+        
+          <div class=" signin">
+            <p class="account">Masz już konto? <a href="index.html">Zaloguj się</a>.</p>
+          </div>
+        </div>
+
+</div>
+
+
+
+    </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="js.js">
+
+    
+</script>
+</body>
+</html>
